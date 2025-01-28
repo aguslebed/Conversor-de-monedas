@@ -61,4 +61,27 @@ Object.entries(resultado).forEach(([codigo,nombre]) =>{
 })
 }
 
+async function convertirMoneda(){
+    const moneda  = document.getElementById("moneda");
+    const convertirA = document.getElementById("convertirA");
+    const cantidad = document.getElementById("cantidadDinero");
+    const fecha = Date.now();
+    console.log(fecha);
+    const url =
+    `https://data.fixer.io/api/convert?access_key={PASTE_YOUR_API_KEY_HERE}&from=${moneda.value}&to=${convertirA.value}&amount=${cantidad}&date=1999-08-14`;
+const options = {
+    method: "GET",
+};
+
+try {
+    const response = await fetch(url, options);
+    const result = await response.text();
+    console.log(result);
+} catch (error) {
+    console.error(error);
+}
+}
+
 cargarMonedas();
+const fecha = new Date();
+    console.log(fecha);

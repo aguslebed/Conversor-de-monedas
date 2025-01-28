@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de monedas💵</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#646464] h-screen">
+    <div class="grid place-content-center h-full ">
+        <div class="container bg-white p-8 rounded-2xl">
+            <h1 class="text-xl flex justify-center mb-6">Conversor de monedas</h1>
+            <div class="inputs flex gap-4">
+                <input type="number"
+                 class="border rounded-lg px-2" 
+                 min="0"
+                 id="cantidadDinero"
+                 placeholder="0">
+                 <select name="" class="border rounded-lg hover:cursor-pointer" id="moneda">
+    
+                </select>
+                <button class="px-6 py-1 border rounded-xl transition delay-150 duration-100 hover:scale-110 hover:bg-[#615FFF] hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                  </svg>
+                  </button>
+                <select name="" class="border rounded-lg  hover:cursor-pointer" id="convertirA">
+                   
+                </select>
+            </div>
+
+            <div class="convertir flex place-content-center mt-4">
+                <button class="border px-8 py-2 rounded-xl transition delay-150 duration-300 hover:scale-110 hover:bg-[#9FE870] hover:text-white">Convertir</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
